@@ -1,4 +1,4 @@
-package com.bishaljung.instagramcloneapp
+package com.punam.instagramcloneapp
 
 import org.junit.Test
 

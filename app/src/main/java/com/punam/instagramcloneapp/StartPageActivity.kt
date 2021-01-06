@@ -1,14 +1,15 @@
-package com.bishaljung.instagramcloneapp
+package com.punam.instagramcloneapp
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import com.bishaljung.instagramcloneapp.UserModel.UserProfileData
+import com.punam.instagramcloneapp.UserModel.UserProfileData
 
 class StartPageActivity : AppCompatActivity() {
 
+   lateinit var name: String
     private lateinit var instaImg : ImageView
     private lateinit var etEmail : EditText
     private lateinit var etPassword : EditText
@@ -17,7 +18,7 @@ class StartPageActivity : AppCompatActivity() {
     private lateinit var etSignup: TextView
     var etemail:String="";
     var etpassw:String="";
-    var name:String="";
+
     var etCuID=""
 //    var img:String=""
     val userlist= arrayListOf<UserProfileData>()

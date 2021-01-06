@@ -1,15 +1,19 @@
-package com.bishaljung.instagramcloneapp.UserAdapter
+package com.punam.instagramcloneapp.UserAdapter
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bishaljung.instagramcloneapp.R
-import com.bishaljung.instagramcloneapp.UserModel.UserPost
+import com.punam.instagramcloneapp.R
+import com.punam.instagramcloneapp.UserModel.UserPost
 import com.bumptech.glide.Glide
+import com.punam.instagramcloneapp.AddPostActivity
+import com.punam.instagramcloneapp.UserModel.AddNewPost
 import de.hdodenhof.circleimageview.CircleImageView
 
 class UserPostAdapter(
@@ -38,12 +42,13 @@ class UserPostAdapter(
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
-        val view =  LayoutInflater.from(parent.context) ///actor page lai yaha leger aako
+        val view =  LayoutInflater.from(parent.context)
             .inflate(R.layout.activity_instapost_layout,  parent, false)
         return  UserViewHolder(view)    }
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val users =  userList[position]
+        //Log.d("user","This is new user")
         holder.tvName.text = users.userName
 
         Glide.with(context).load(users.userProfileImg).into(holder.imgProfile)
@@ -52,6 +57,8 @@ class UserPostAdapter(
         Glide.with(context).load(users.postcmntImg).into(holder.imgCmnt)
         Glide.with(context).load(users.postshareImg).into(holder.imgShare)
         Glide.with(context).load(users.threedotImg).into(holder.imgThreedots)
+
+
 
     }
 

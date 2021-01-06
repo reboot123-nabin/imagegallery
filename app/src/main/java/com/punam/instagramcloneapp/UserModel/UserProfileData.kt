@@ -1,4 +1,4 @@
-package com.bishaljung.instagramcloneapp.UserModel
+package com.punam.instagramcloneapp.UserModel
 
 import android.os.Parcel
 import android.os.Parcelable

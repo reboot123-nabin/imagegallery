@@ -1,17 +1,17 @@
-package com.bishaljung.instagramcloneapp.UserModel
+package com.punam.instagramcloneapp.UserModel
 
 import android.os.Parcel
 import android.os.Parcelable
 
 data class UserPost(
-        val userId: String? =  null,
-        val userName:String?= null,
-        val userProfileImg: String? = null,
-        val userPostImg: String? =  null,
-        val postlikeImg: String? = null,
-        val postcmntImg: String? = null,
-        val postshareImg: String? = null,
-        val threedotImg: String? = null,
+    val userId: String? =  null,
+    val userName:String?= null,
+    val userProfileImg: String? = null,
+    val userPostImg: String? =  null,
+    val postlikeImg: String? = null,
+    val postcmntImg: String? = null,
+    val postshareImg: String? = null,
+    val threedotImg: String? = null,
 ): Parcelable {
     constructor(parcel: Parcel) : this(
             (parcel.readValue(Int::class.java.classLoader) as? Int).toString(),

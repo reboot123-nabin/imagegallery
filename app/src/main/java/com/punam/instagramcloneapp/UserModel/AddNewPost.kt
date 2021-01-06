@@ -1,13 +1,15 @@
-package com.bishaljung.instagramcloneapp.UserModel
+package com.punam.instagramcloneapp.UserModel
 
 import android.os.Parcel
 import android.os.Parcelable
 
 class AddNewPost (
         val postimg:String?=null,
-        val profileimg:String?=null
+        val profileimg:String?=null,
+        val name:String?=null
 ):Parcelable {
     constructor(parcel: Parcel) : this(
+            parcel.readString(),
             parcel.readString(),
             parcel.readString()
     ) {
@@ -16,6 +18,7 @@ class AddNewPost (
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(postimg)
         parcel.writeString(profileimg)
+        parcel.writeString(name)
     }
 
     override fun describeContents(): Int {

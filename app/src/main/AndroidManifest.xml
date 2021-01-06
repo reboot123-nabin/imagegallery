@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bishaljung.instagramcloneapp">
+    package="com.punam.instagramcloneapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -15,10 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InstagramCloneApp">
-        <activity android:name=".AddPostActivity"></activity>
-        <activity android:name=".HomePageActivity" />
-        <activity android:name=".SignUpPageActivity" />
-        <activity android:name=".StartPageActivity">
+        <activity android:name="com.punam.instagramcloneapp.AddPostActivity"></activity>
+        <activity android:name="com.punam.instagramcloneapp.HomePageActivity" />
+        <activity android:name="com.punam.instagramcloneapp.SignUpPageActivity" />
+        <activity android:name="com.punam.instagramcloneapp.StartPageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

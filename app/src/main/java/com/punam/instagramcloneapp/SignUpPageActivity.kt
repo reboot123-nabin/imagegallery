@@ -1,14 +1,12 @@
-package com.bishaljung.instagramcloneapp
+package com.punam.instagramcloneapp
 
 import android.app.Activity
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-import com.bishaljung.instagramcloneapp.UserModel.UserProfileData
-import org.w3c.dom.Text
+import com.punam.instagramcloneapp.UserModel.UserProfileData
 
 class SignUpPageActivity : AppCompatActivity() {
 
@@ -50,11 +48,12 @@ class SignUpPageActivity : AppCompatActivity() {
                     override fun onNothingSelected(parent: AdapterView<*>?) {
                     }
                 }
-        btnregister.setOnClickListener(){
-            // loaddata((cid.text.toString()).toInt(),fname.text.toString(),lname.text.toString(),email.text.toString(),password.text.toString(),selectedItem,img.text.toString())
+        btnregister.setOnClickListener{
             val id=etCuID.text.toString()
             val profile=UserProfileData(id.toInt(),etFirstName.text.toString(),etSecondName.text.toString()
                     ,etEmail.text.toString(),etPassw.text.toString(),itemSelected)
+            Toast.makeText(this,"Registration Successful",Toast.LENGTH_SHORT).show()
+
 
             val intent=Intent()
             intent.putExtra("userprofilelist",profile)
