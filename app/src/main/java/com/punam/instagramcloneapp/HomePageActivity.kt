@@ -80,7 +80,7 @@ class HomePageActivity : AppCompatActivity() {
                 name=addnewpost.get(0).name.toString()
                 userList.add(UserPost(
                                 "1",
-                                "name",
+                                "aksana chetri",
                                 "$profileImg",
                                 "$postImage",
                                 "https://www.searchpng.com/wp-content/uploads/2019/02/Instagram-Like-Icon-1.png",

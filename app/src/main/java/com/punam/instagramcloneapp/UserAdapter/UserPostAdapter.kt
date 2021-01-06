@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.punam.instagramcloneapp.R
 import com.punam.instagramcloneapp.UserModel.UserPost
 import com.bumptech.glide.Glide
-import com.punam.instagramcloneapp.AddPostActivity
 import com.punam.instagramcloneapp.UserModel.AddNewPost
 import de.hdodenhof.circleimageview.CircleImageView
 
