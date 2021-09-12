@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.punam.instagramcloneapp">
+    package="com.nabin.instagramcloneapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,20 +10,35 @@
 
     <application
         android:allowBackup="true"
+        android:exported="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InstagramCloneApp">
-        <activity android:name="com.punam.instagramcloneapp.AddPostActivity"></activity>
-        <activity android:name="com.punam.instagramcloneapp.HomePageActivity" />
-        <activity android:name="com.punam.instagramcloneapp.SignUpPageActivity" />
-        <activity android:name="com.punam.instagramcloneapp.StartPageActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:theme="@style/Theme.InstagramCloneApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".GalleryActivity">
+
+
+        </activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".InstagramActivity">
+
+
+        </activity>
+        <activity android:name=".AddPostActivity"></activity>
+        <activity android:name=".HomePageActivity">
+
+        </activity>
+        <activity android:name=".SignUpPageActivity"></activity>
+        <activity android:name=".StartPageActivity" >
+
         </activity>
     </application>
 
